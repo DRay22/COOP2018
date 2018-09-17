@@ -1,11 +1,11 @@
 # README.md
 ## Ready to be Reviewed
-* U02_S00_C&F_intervals.py
-* U02_S00_ConvertCtoF.py
-* U02_S00_FtoC.py
-* U02_S00_Kilo_to_Mile.py
-* U02.2_S00_Compounding.py
-* U02.2_S00_ExamScores.py
-* U02.2_S00_FutVal.py
-* U02.2_S00_MultipleTemps.py
+* U02_Ex05_C&F_intervals.py
+* U02_Ex01_ConvertCtoF.py
+* U02_Ex09_FtoC.py
+* U02_Ex10_Kilo_to_Mile.py
+* U02_Ex08_Compounding.py
+* U02_Ex03_ExamScores.py
+* U02_Ex06_FutVal.py
+* U02_Ex04_MultipleTemps.py
 ## In Progress
