@@ -3,7 +3,7 @@
 # Author:
 # Course: Coding for OOP
 # Section: A3
-#     Date: ${29}  ${2018}
+#     Date: ${19} ${Sept} ${2018}
 #      IDE: PyCharm
 #
 # Assignment Info
@@ -12,21 +12,21 @@
 #    Chapter: 2
 #
 # Program Description
-# This
+# This program converts Kilometers to Miles
 #
 #
 #
 # Algorith (pseudocode)
 #   Explain purpose
-#   Require Input
+#   Require input to define x
 #   Calculate y = x*0.621371
-#   Produce Output print(y)
+#   Produce Output (y)
 
 
 def main():
     # Explain Purpose
     print("This program is used to convert kilometers to miles")
-    # Require Input
+    # Require Input to define x
     x = eval(input("What is the number of kilometers?"))
     # Calculate Input
     for i in range(1):

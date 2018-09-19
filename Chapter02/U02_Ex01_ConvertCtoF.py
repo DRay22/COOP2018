@@ -2,14 +2,14 @@
 #
 # Author: Donovan Ray
 # Course: Coding for OOP
-# Section: A3
-#     Date: ${27} 29 ${2018}
+# Section: A2
+#     Date: ${19} ${9} ${2018}
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise:
+#   Exercise: Converting Celsius to Fahrenheit (Exercise 1)
 #     Source: Python Programming
-#    Chapter:
+#    Chapter: 2
 #
 # Program Description
 #   This program converts Celsius to Fahrenheit
@@ -19,7 +19,6 @@
 # Get C from user and assign to Celsius
 # Calculate: (9/5) * C + 32 and assign to fahrenheit
 # print fahrenheit
-
 
 def main():
     # some code

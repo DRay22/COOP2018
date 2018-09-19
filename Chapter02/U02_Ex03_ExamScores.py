@@ -3,24 +3,24 @@
 # Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A3
-#     Date: ${29} 5 ${2018}
+#     Date: ${19} ${Sept} ${2018}
 #      IDE: PyCharm
 #
 # Assignment Info
 #   Exercise: Exam Scores
 #     Source: Python Programming
-#    Chapter: 2.2
+#    Chapter: 2
 #
 # Program Description
-#   This program will take three exam scores and average them
+#   This program will take three exam scores and average them.
 #
 #
 #
 # Algorithm (pseudocode)
-#   Explain code
-#   Require input
-#   Calculate
-#   Output
+#   Describe program "This program will average three exam scores"
+#   Require three inputs a,b, and c (exam scores)
+#   Calculate using equation: z = (a + b + c)/3
+#   Print output (z)
 
 
 def main():
