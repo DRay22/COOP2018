@@ -30,7 +30,7 @@ def main():
     c = eval(input("enter the third exam score:   "))
     for i in range(1):
         z = (a + b + c)/3
-        print(z)
+        print("The average is", z)
 
 
 main()

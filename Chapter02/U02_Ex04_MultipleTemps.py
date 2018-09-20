@@ -45,18 +45,18 @@ def main():
     e = eval(input("Enter the fifth temperature in fahrenheit  "))
     run = input("Press ENTER to continue    ")
     # Calculate
-    for i in range(1):
-        a1 = (a - 32) * 5/9
-        b1 = (b - 32) * 5/9
-        c1 = (c - 32) * 5/9
-        d1 = (d - 32) * 5/9
-        e1 = (e - 32) * 5/9
+    run
+    a1 = (a - 32) * 5/9
+    b1 = (b - 32) * 5/9
+    c1 = (c - 32) * 5/9
+    d1 = (d - 32) * 5/9
+    e1 = (e - 32) * 5/9
     # Output
-        print(a1, "Celsius", a, "Fahrenheit")
-        print(b1, "Celsius", b, "Fahrenheit")
-        print(c1, "Celsius", c, "Fahrenheit")
-        print(d1, "Celsius", d, "Fahrenheit")
-        print(e1, "Celsius", e, "Fahrenheit")
+    print(a1, "Celsius", a, "Fahrenheit")
+    print(b1, "Celsius", b, "Fahrenheit")
+    print(c1, "Celsius", c, "Fahrenheit")
+    print(d1, "Celsius", d, "Fahrenheit")
+    print(e1, "Celsius", e, "Fahrenheit")
 
 
 main()
