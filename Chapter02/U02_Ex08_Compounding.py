@@ -20,34 +20,34 @@
 #   Print the program description "This program calculates the future value with a interest rate"
 #   "Over a specified amount of time"
 #   Define principle input
-#   Define apr input
-#   Define time_period input (compounding)
+#   Define rate input
+#   Define periods input
 #   Calculate using formula:
 #       Define apr1 (apr1 = apr/100)
-#       Use formula: principal = principal * (1 + apr1) ** time_period
+#       Divide rate/periods and add to principal
 #   Print output, showing only the principle
 
 
 def main():
     #   Print the program description "This program calculates the future value with a interest rate"
-    print("This program calculates the future value with a interest rate")
+    print("This program calculates the future value with a interest rate quarterly")
     #   "Over a specified amount of time"
     print("Over a specified amount of time")
 
     #   Define principle input
     principal = eval(input("Enter the initial principal:  "))
     #   Define apr input
-    apr = eval(input("Enter the annual interest rate: (without percentage sign)  "))
+    rate = eval(input("Enter the annual interest rate: (without percentage sign)  "))
     #   Define time_period input (compounding)
-    time_period = eval(input("What is the number of years that will be compounded:   "))
-    # Get number of periods that will be calculated
-    period = eval(input("How many periods will be calculated in one year?   "))
+    periods = eval(input("How many times will the interest be compounded in one year?   "))
     #   Calculate using formula:
-    for i in range(10):
-        apr1 = apr/100
-        principal = principal * (1 + apr1) ** time_period
+    for i in range(10 * periods):
+        apr1 = rate/100
+        # Divide rate/periods and add to principal
+        principal1 = (rate/periods) + principal
     #   Print output, showing only the principle
-        print("The value is:", principal)
+
+    print("The value is:", principal1, "after 10 years")
 
 
 main()
