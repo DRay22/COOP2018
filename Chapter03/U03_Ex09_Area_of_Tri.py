@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Ex09 finding the area of a triangle
 #     Source: Python Programming
 #    Chapter: 03
 #
@@ -18,9 +18,8 @@
 #
 # Algorithm (pseudocode)
 #   Introduce Program
-#   Get input (a,b,c)
-#   Calculate using s = (a + b + c)/2
-#   Calculate using area = math.sqrt s(s - a)(s - b)
+#   Get input (b, h)
+#   Calculate using area = math.sqrt((1/2*b) *h)
 #   Print area
 
 import math
@@ -32,7 +31,9 @@ def main():
     #   Get input (b, h)
     b = int(input("What is the base of the triangle?   "))
     h = int(input("What is the height of the triangle?  "))
+    #   Calculate using area = math.sqrt((1/2*b) *h)
     area = math.sqrt((1/2*b)*h)
+    #   Print area
     print("the area of the triangle is", area,)
 
 

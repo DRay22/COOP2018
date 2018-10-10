@@ -28,7 +28,7 @@
 
 
 def main():
-    # Introduce Program "This program
+    # Introduce Program "This program will..."
     print("This program will calculate the weight of a carbohydrate molecule based off of the weight of")
     print("Hydrogen, Carbon, and Oxygen atoms inside of it")
     # Input for H, C, and O "Enter the number of Hydrogen atoms in the Molecule   "

@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Ex17 Approximating a square root
 #     Source: Python Programming
 #    Chapter: 03
 #
@@ -33,27 +33,37 @@ import math
 
 
 def main():
+    #   Introduce Program
     print("This program will approximate square root.  ")
     print(" ")
+    #   Input: X for number to be squared, Y for repetition of guessing equation
     x = eval(input("What is the number that you would like to square?   "))
     print(" ")
     y = eval(input("How many times would you like to repeat the guess?  "))
     print(" ")
+    #   Define guess as x/2
     guess = x/2
     print("The guess is", guess)
     print(" ")
+    #   Define square root
     square = math.sqrt(x)
+    #   print square root
     print("The square root is", square)
     print(" ")
+    #   First guess: (guess + x/guess)/2
     approx = (guess + x/guess)/2
+    #   Print first guess
     print("The approximation is", approx)
     print(" ")
+    #   Print distance between square root and first guess
     dist = approx - square
     print("The distance between the two is", dist)
     print(" ")
+    #   Loop first guess algorithm Y amount of times
     for y in range(y):
         approx1 = ((guess + x/guess)/2)*y
         print(" ")
+        #   print looped guess and distance (in loop)
         print("The improved guess is", approx1)
         print(" ")
         print("The distance between the square root and the improved guess is", approx1 - square)

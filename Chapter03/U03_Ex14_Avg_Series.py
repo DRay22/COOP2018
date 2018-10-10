@@ -22,20 +22,23 @@
 #  Make for loop with i
 #  Ask for input (repeating based on i)
 #  calculate by adding input values and divide by i, define as end
-#  print output (end)
+#  print output (end/i)
 
 
 def main():
-
+    # Introduce program: This program will average a series of user generated numbers and user generated amounts of...
     print("This program will average a series of user generated numbers with a user generated amounts of numbers")
-    series = eval(input("How many numbers are in this group? (2 or above)   "))
-    i = series
+    #  Ask how many numbers are in the group: define as i
+    i = eval(input("How many numbers are in this group? (2 or above)   "))
     sum = 0
-    for amount in range(series):
+    #  Make for loop with i
+    for amount in range(i):
+        #  Ask for input (repeating based on i)
         n = eval(input("Please enter a value:   "))
-        sum = sum + n
-
-    print(sum / i)
+        #  calculate by adding input values, define as end
+        end = sum + n
+    #  print output (end/i)
+    print(end / i)
 
 
 main()

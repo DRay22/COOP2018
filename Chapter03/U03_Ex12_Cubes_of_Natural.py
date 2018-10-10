@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Ex12 cubes of natural number sums
 #     Source: Python Programming
 #    Chapter: 03
 #
@@ -18,38 +18,28 @@
 #
 #
 # Algorithm (pseudocode)
-#   Introduce program
-#   Get repetition number, define as rep
-#   Get starting number, define as startnum
-#   Make while loop
-#       If rep is greater than two:
-#       num1 = startnum + rep
-#       print num1**3
-#   if rep is less than 2:
-#       print startnum**3
-#   if rep is equal to two:
-#   num2 = startnum + 2
-#   print startnum**3
+# Introduce program
+# Get repetition number
+# Define x as 0
+# For loop in range 1, n + 1
+# Equation for sumnat
+# Print sumnat**3
 
 
 def main():
     # Introduce program
-    print("This program will find the sum N natural numbers, where n is a user generated value")
+    print("This program will find the sum of natural numbers and then cube the results")
     # Get repetition number, define as rep
-    rep = eval(input("How many times would you like to repeat?   "))
-    num = 0
-    nxtnum = 0
-    startnum = eval(input("What is the starting number?      "))
-    while rep >= 2:
-        num1 = startnum**rep-startnum
-        print(num1**3)
-        break
-    if rep <= 2:
-        print(startnum**3)
-    if rep == 2:
-        num2 = 0
-        num2 = startnum + 2
-        print(num2**3)
-
+    n = eval(input("How many numbers would you like to sum?  "))
+    # Define x as 0
+    x = 0
+    # Define sumnat as 0
+    sumnat = 0
+    # For loop in range 1, n + 1
+    for x in range(1, n + 1):
+        # Equation for sumnat
+        sumnat = sumnat + x
+        # Print sumnat
+    print("the sum of the natural numbers is", sumnat**3)
 
 main()

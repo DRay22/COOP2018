@@ -19,7 +19,7 @@
 # Algorithm (pseudocode)
 #   Introduce program: "This program will..."
 #   Ask for input on data points, x1,x2,y1,y2 (separately)
-#   Calculate distance by plugging data points into formula: d = square root of x2-x1**2 + y2-y1**2
+#   Calculate distance by plugging data points into formula: d = square root of x - y
 #   print output (d)
 
 import math
@@ -33,9 +33,11 @@ def main():
     y1 = int(input("What is the Y1 value?    "))
     x2 = int(input("What is the X2 value?    "))
     y2 = int(input("What is the Y2 value?    "))
-    # Calculate distance by plugging data points into formula: d = square root of x2-x1**2 + y2-y1**2
+    # define x as (x2 - x1)**2
     x = (x2 - x1)**2
+    # define y as (y2 - y1)**2
     y = (y2 - y1)**2
+    # Calculate distance by plugging data points into formula: d = square root of x - y
     d = math.sqrt(x-y)
     # print output (d)
     print(d)

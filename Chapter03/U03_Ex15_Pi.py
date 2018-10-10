@@ -32,11 +32,14 @@ import math
 def main():
     # Introduce program: "This program will approximate pi"
     print("This program will approximate pi")
-    # Receive input (n)
+    #   Define N to # of terms
     n = int(input("How many terms are in the sequence?   "))
+    #   Initialize AppPi to 0
     AppPi = 0
-    # Make a for loop with n
+    #   Loop N times (i)
     for amt in range(1, n+1):
+        #   Add nextTerm to ApproxPI
+        #       nextTerm = If i%2 = 0 #even, else, subtract 4/2i-1 (use above AND below)
         AppPi = 4 / 2*n - 1
         if n % 2:
             AppPi + 4 / 2*n - 1
@@ -45,7 +48,9 @@ def main():
         AppPi = 4/1 - 4/3 + 4/5 - 4/7 + 4/(2*n - 1) * (-1)**(n-1)
         piabs = math.fabs(math.pi)
         Appabs = math.fabs(AppPi)
+        #   Find diff between math.pi and AppPi
         sub = piabs - Appabs
+        #   Print results
         print(sub)
 
 

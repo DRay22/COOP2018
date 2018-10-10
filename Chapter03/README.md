@@ -6,11 +6,11 @@
 * Ex07
 * Ex09
 * Ex10
+* Ex11
+* Ex12
 * Ex14
 * Ex15
 * Ex16
 * Ex17
 
 ## In Progress
-* Ex11
-* Ex12

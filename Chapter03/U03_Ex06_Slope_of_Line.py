@@ -39,7 +39,7 @@ def main():
     y = y2-y1
     x = x2-x1
     s = y/x
-    # Print output
+    # Print output (slope)
     print("The slope is", s,)
 
 

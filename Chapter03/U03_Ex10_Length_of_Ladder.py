@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Ex10 finding the length of a ladder
 #     Source: Python Programming
 #    Chapter: 03
 #
