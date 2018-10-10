@@ -28,8 +28,7 @@ def main():
     a = eval(input("enter the first exam score:   "))
     b = eval(input("enter the second exam score:   "))
     c = eval(input("enter the third exam score:   "))
-    run = input("Press ENTER to continue")
-    run
+    input("Press ENTER to continue")
     z = (a + b + c)/3
     print("The average is", z)
 

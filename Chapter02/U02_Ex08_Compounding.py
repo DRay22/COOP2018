@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Future Value with compounding
+#   Exercise: Ex08 Future Value with compounding
 #     Source: Python Programming
 #    Chapter: 2
 #
@@ -40,12 +40,14 @@ def main():
     apr = eval(input("Enter the annual interest rate: (without percentage sign)  "))
     #   Define time_period input (compounding)
     time_period = eval(input("What is the number of years that will be compounded:   "))
+    # Get number of periods that will be calculated
+    period = eval(input("How many periods will be calculated in one year?   "))
     #   Calculate using formula:
-    for i in range(1):
+    for i in range(10):
         apr1 = apr/100
         principal = principal * (1 + apr1) ** time_period
     #   Print output, showing only the principle
-    print("Than value is:", principal)
+        print("The value is:", principal)
 
 
 main()
