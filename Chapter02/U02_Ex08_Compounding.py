@@ -12,12 +12,12 @@
 #    Chapter: 2
 #
 # Program Description
-# This program calculates the future value with a interest rate, over a specified amount of time
+# This program calculates the future value with a interest rate quarterly, over a specified amount of time
 #
 #
 #
 # Algorithm (pseudocode)
-#   Print the program description "This program calculates the future value with a interest rate"
+#   Print the program description "This program calculates the future value with a interest rate quarterly"
 #   "Over a specified amount of time"
 #   Define principle input
 #   Define rate input
@@ -29,7 +29,7 @@
 
 
 def main():
-    #   Print the program description "This program calculates the future value with a interest rate"
+    #   Print the program description "This program calculates the future value with a interest rate quarterly"
     print("This program calculates the future value with a interest rate quarterly")
     #   "Over a specified amount of time"
     print("Over a specified amount of time")
