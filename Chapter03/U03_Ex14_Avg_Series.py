@@ -29,16 +29,17 @@ def main():
     # Introduce program: This program will average a series of user generated numbers and user generated amounts of...
     print("This program will average a series of user generated numbers with a user generated amounts of numbers")
     #  Ask how many numbers are in the group: define as i
-    i = eval(input("How many numbers are in this group? (2 or above)   "))
+    nums = eval(input("How many numbers are in this group? (2 or above)   "))
     sum = 0
+    avg = 0
     #  Make for loop with i
-    for amount in range(i):
+    for amount in range(nums):
         #  Ask for input (repeating based on i)
         n = eval(input("Please enter a value:   "))
         #  calculate by adding input values, define as end
-        end = sum + n
+        avg = sum + n
     #  print output (end/i)
-    print(end / i)
+    print("The average is", avg / nums,)
 
 
 main()

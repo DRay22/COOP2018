@@ -1,6 +1,6 @@
 # U03_Ex11_natural_numbers.py.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 30 Sept 2018
@@ -12,8 +12,8 @@
 #    Chapter: 03
 #
 # Program Description
-# Introduction: This program will find the sum N natural numbers, find a sum, and cube them,
-# where n is a user generated value
+# Introduction: This program will find the sum of cubed natural numbers
+#
 #
 #
 #
@@ -28,7 +28,7 @@
 
 def main():
     # Introduce program
-    print("This program will find the sum of natural numbers and then cube the results")
+    print("This program will find the sum of cubed natural numbers")
     # Get repetition number, define as rep
     n = eval(input("How many numbers would you like to sum?  "))
     # Define x as 0

@@ -34,13 +34,13 @@ def main():
     x2 = int(input("What is the X2 value?    "))
     y2 = int(input("What is the Y2 value?    "))
     # define x as (x2 - x1)**2
-    x = (x2 - x1)**2
+    DeltaX = (x2 - x1)**2
     # define y as (y2 - y1)**2
-    y = (y2 - y1)**2
+    DeltaY = (y2 - y1)**2
     # Calculate distance by plugging data points into formula: d = square root of x - y
-    d = math.sqrt(x-y)
+    dist = math.sqrt(DeltaX-DeltaY)
     # print output (d)
-    print(d)
+    print("The distance between the approximation and the square root is:", dist,)
 
 
 main()

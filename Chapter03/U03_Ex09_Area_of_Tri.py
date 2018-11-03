@@ -18,9 +18,10 @@
 #
 # Algorithm (pseudocode)
 #   Introduce Program
-#   Get input (b, h)
-#   Calculate using area = math.sqrt((1/2*b) *h)
-#   Print area
+#   Get input for all three sides (a, b, c)
+#   Calculate using s = (a + b + c)/2
+#   Find area using area = math.sqrt(s(s - a)*(s - b)*(s - c))
+#   Print "the area of the triangle is:", area,
 
 import math
 
@@ -28,11 +29,14 @@ import math
 def main():
     # Introduce Program
     print("This program will calculate the area of a triangle with user generated measurements")
-    #   Get input (b, h)
-    b = int(input("What is the base of the triangle?   "))
-    h = int(input("What is the height of the triangle?  "))
-    #   Calculate using area = math.sqrt((1/2*b) *h)
-    area = math.sqrt((1/2*b)*h)
+    #   Get input for all three sides (a, b, c)
+    a = eval(input("What is the length of the first side of the triangle?  "))
+    b = eval(input("What is the length of the second side of the triangle?  "))
+    c = eval(input("What is the length of the third side of the triangle?  "))
+    #   Calculate using s = (a + b + c)/2
+    s = (a + b + c)/2
+    #   Find area using area = math.sqrt(s(s - a)*(s - b)*(s - c))
+    area = math.sqrt(s(s - a)*(s - b)*(s - c))
     #   Print area
     print("the area of the triangle is", area,)
 

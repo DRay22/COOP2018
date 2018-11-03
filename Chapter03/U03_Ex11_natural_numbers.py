@@ -18,11 +18,10 @@
 #
 # Algorithm (pseudocode)
 # Introduce program
-# Get repetition number
-# Define x as 0
+# Get repetition number (n)
 # For loop in range 1, n + 1
-# Equation for sumnat
-# Print sumnat
+# Equation for sumnat is sumnat + x (repeated for every loop
+# Print 'the sum of the natural numbers is', sumnat
 
 
 def main():
@@ -30,8 +29,6 @@ def main():
     print("This program will find the sum N natural numbers, where n is a user generated value")
     # Get repetition number, define as rep
     n = eval(input("How many numbers would you like to sum?  "))
-    # Define x as 0
-    x = 0
     # Define sumnat as 0
     sumnat = 0
     # For loop in range 1, n + 1

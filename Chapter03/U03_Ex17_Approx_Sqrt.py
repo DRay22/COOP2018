@@ -12,7 +12,7 @@
 #    Chapter: 03
 #
 # Program Description
-#   This program will approximate the square root of a number (User generated) and display it
+#   This program will approximate the square root of a number and display it
 #
 #
 #
@@ -21,12 +21,14 @@
 #   Input: X for number to be squared, Y for repetition of guessing equation
 #   Define guess as x/2
 #   Define square root
+#   square = math.sqrt(num)
 #   print square root
 #   First guess: (guess + x/guess)/2
 #   Print first guess
 #   Print distance between square root and first guess
 #   Loop first guess algorithm Y amount of times
 #   print looped guess and distance (in loop)
+#   stop after set amount of time
 
 
 import math
@@ -36,22 +38,22 @@ def main():
     #   Introduce Program
     print("This program will approximate square root.  ")
     print(" ")
-    #   Input: X for number to be squared, Y for repetition of guessing equation
-    x = eval(input("What is the number that you would like to square?   "))
+    #   Input: num for number to be squared, rep for repetition of guessing equation
+    num = eval(input("What is the number that you would like to square?   "))
     print(" ")
-    y = eval(input("How many times would you like to repeat the guess?  "))
+    rep = eval(input("How many times would you like to repeat the guess?  "))
     print(" ")
-    #   Define guess as x/2
-    guess = x/2
+    #   Define guess as num/2
+    guess = num/2
     print("The guess is", guess)
     print(" ")
     #   Define square root
-    square = math.sqrt(x)
+    square = math.sqrt(num)
     #   print square root
     print("The square root is", square)
     print(" ")
-    #   First guess: (guess + x/guess)/2
-    approx = (guess + x/guess)/2
+    #   First guess: (guess + num/guess)/2
+    approx = (guess + num/guess)/2
     #   Print first guess
     print("The approximation is", approx)
     print(" ")
@@ -59,9 +61,9 @@ def main():
     dist = approx - square
     print("The distance between the two is", dist)
     print(" ")
-    #   Loop first guess algorithm Y amount of times
-    for y in range(y):
-        approx1 = ((guess + x/guess)/2)*y
+    #   Loop first guess algorithm rep amount of times
+    for y in range(rep):
+        approx1 = ((guess + num/guess)/2)
         print(" ")
         #   print looped guess and distance (in loop)
         print("The improved guess is", approx1)

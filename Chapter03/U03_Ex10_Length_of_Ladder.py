@@ -35,7 +35,7 @@ def main():
     #   Define angle(Angle = math.pi/180*Degree)
     angle = math.pi/180*degree
     #   Calculate using length = height/math.sin angle
-    length = height/math.sin*angle
+    length = height/math.sin(angle)
     print("The length is", length,)
 
 
