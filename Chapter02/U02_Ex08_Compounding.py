@@ -40,14 +40,15 @@ def main():
     rate = eval(input("Enter the annual interest rate: (without percentage sign)  "))
     #   Define time_period input (compounding)
     periods = eval(input("How many times will the interest be compounded in one year?   "))
+    # Divide rate by 100 to convert it into a decimal
+    apr1 = rate / 100
     #   Calculate using formula:
     for i in range(10 * periods):
-        apr1 = rate/100
         # Divide rate/periods and add to principal
-        principal1 = (rate/periods) + principal
+        principal = principal + principal * apr1/periods
     #   Print output, showing only the principle
 
-    print("The value is:", principal1, "after 10 years")
+    print("The value is:", principal, "after 10 years")
 
 
 main()
