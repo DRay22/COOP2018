@@ -35,23 +35,19 @@ def main():
     #   Define N to # of terms
     n = int(input("How many terms are in the sequence?   "))
     #   Initialize AppPi as 4 / 2 * n - 1
-    AppPi = 4 / 2 * n - 1
+    AppPi = 0
     #   Loop N times (i)
     for amt in range(1, n+1):
-        #       nextTerm = If i%2 = 0 #even, else, subtract 4/2i-1 (use above AND below)
-        if n % 2:
-            AppPi = AppPi + 4 / 2*n - 1
-        else:
-            AppPi = AppPi - 4 / 2*n - 1
-        AppAccum = 4/1 - 4/3 + 4/5 - 4/7 + 4/(2*n - 1) * (-1)**(n-1)
-        piabs = math.fabs(math.pi)
-        Appabs = math.fabs(AppPi)
-        #   Find diff between math.pi and AppPi
-        sub = piabs - Appabs
-        #   Print results
-        print("\nPi is:", piabs)
-        print("\nThe approximated pi is:", Appabs)
-        print("\nThe difference between in the approximation and Pi is:", sub)
+        AppPi = AppPi + 4/(2*amt - 1) * (-1)**(amt-1)
+
+    #   Find diff between math.pi and AppPi
+    piabs = math.fabs(math.pi)
+    Appabs = math.fabs(AppPi)
+    sub = piabs - Appabs
+    #   Print results
+    print("Pi is:", piabs)
+    print("The approximated pi is:", Appabs)
+    print("The difference between in the approximation and Pi is:", sub)
 
 
 main()
