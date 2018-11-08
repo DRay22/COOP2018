@@ -1,4 +1,4 @@
-# U04_Ex01_ABC.py.py
+# U04_Ex01_ABC.py
 #
 # Author: Donovan Ray
 # Course: Coding for OOP
@@ -62,7 +62,7 @@ def main():
         def main_a():
             print("This program will print a square onto the graphics window")
             print("it will then give the user the option to close the window")
-            win = GraphWin()
+            win = GraphWin("Exercise 1A", 500, 500)
             shape = Rectangle(Point(10, 50), Point(30, 70))
             shape.setOutline("red")
             shape.setFill("red")
@@ -82,35 +82,38 @@ def main():
 #   Make a rectangle
 #       Set outline and fill to red
 #   Draw rectangle
-#   make a for loop:
-#   Wait for mouse click
-#   Define new x1-2 and y1-2 points by adding 5 to the original points
-#   make new rectangle (rectangle2) with new points
-#       set outline and fill to red
-#   draw new rectangle
-#   repeat and add 10 to x1-2 and y1-2
+    #   make a for loop:
+    #   Wait for mouse click
+    #   Get x and y of click
+    #   Make new points, x3 and y3 using the mouse's coordinates
+    #   Make another set of coordinates, x4 and y4. These are just x3 + 20 and y3 + 20
+    #   Make a square using these points
+    #   Make outline and fill red
+    #   Draw square
+#   Loop repeats
 #   Ask for input (without variable)
 #   close graphics window and stop process
     if run == 2:
         def main_b():
-            print("This program will display a rectangle, and display more with 10 clicks.")
-            win = GraphWin()
-            shape = Rectangle(Point(10, 50), Point(30, 70))
+            print("This program will display a rectangle, and display a user specified amount when clicked.")
+            rep = int(input("How many extra squares would you like to draw?   "))
+            win = GraphWin("Exercise 1B", 500, 500)
+            shape = Rectangle(Point(50, 90), Point(70, 110))
             shape.setOutline("red")
             shape.setFill("red")
             shape.draw(win)
-            for i in range(10):
-                win.getMouse()
-                x1 = 15
-                x2 = 35
-                y1 = 55
-                y2 = 75
-                shape2 = Rectangle(Point(x1, y1), Point(x2, y2))
-                shape2.setOutline("red")
-                shape2.setFill("red")
-                shape2.draw(win)
-                input("press ENTER to close graphics window")
-                win.close()
+            for i in range(rep):
+                click = win.getMouse()
+                x3 = click.getX()
+                y3 = click.getY()
+                x4 = x3 + 20
+                y4 = y3 + 20
+                shape3 = Rectangle(Point(x3, y3), Point(x4, y4))
+                shape3.setOutline("red")
+                shape3.setFill("red")
+                shape3.draw(win)
+            input("press ENTER to close graphics window")
+            win.close()
 
         main_b()
 
@@ -126,11 +129,13 @@ def main():
 #   Draw rectangle
 #   make a for loop:
 #   Wait for mouse click
-#   Define new x1-2 and y1-2 points by adding 5 to the original points
-#   make new rectangle (rectangle2) with new points
-#       set outline and fill to red
-#   draw new rectangle
-#   repeat and add 10 to x1-2 and y1-2
+#   Get x and y of click
+#   Make new points, x3 and y3 using the mouse's coordinates
+#   Make another set of coordinates, x4 and y4. These are just x3 + 20 and y3 + 20
+#   Make a square using these points
+#   Make outline and fill red
+#   Draw square
+#   Loop repeats
 #   After loop is complete:
 #   Make text with points 10, 50 "Click on window to close it" assign to variable msg
 #   Set color to black
@@ -141,27 +146,28 @@ def main():
 #   close graphics window and stop process
     if run == 3:
         def main_c():
-            print("This program will display a rectangle, and display more with 10 clicks.")
-            print("After the 10 clicks it will give the user the option to click on the graphics window ")
+            print("This program will display a rectangle, and display a user specified amount when clicked.")
+            print("After the specified amount clicks it will give the user the option to click on the graphics window ")
             print("This will close the window")
-            win = GraphWin()
-            shape = Rectangle(Point(10, 50), Point(30, 70))
+            rep = int(input("How many extra squares would you like to draw?   "))
+            win = GraphWin("Exercise 1C", 500, 500)
+            shape = Rectangle(Point(50, 90), Point(70, 110))
             shape.setOutline("red")
             shape.setFill("red")
             shape.draw(win)
-            for i in range(10):
-                win.getMouse()
-                x1 = 15
-                x2 = 35
-                y1 = 55
-                y2 = 75
-                shape2 = Rectangle(Point(x1, y1), Point(x2, y2))
-                shape2.setOutline("red")
-                shape2.setFill("red")
-                shape2.draw(win)
-            msg = Text(Point(10, 50), "Click on window to close it")
+            for i in range(rep):
+                click = win.getMouse()
+                x3 = click.getX()
+                y3 = click.getY()
+                x4 = x3 + 20
+                y4 = y3 + 20
+                shape3 = Rectangle(Point(x3, y3), Point(x4, y4))
+                shape3.setOutline("red")
+                shape3.setFill("red")
+                shape3.draw(win)
+            msg = Text(Point(95, 90), "Click on window to close it")
             msg.setTextColor("black")
-            msg.setSize(36)
+            msg.setSize(12)
             msg.setFace("times roman")
             msg.draw(win)
             win.getMouse()
