@@ -1,4 +1,4 @@
-# U04_Ex03_Face.py.py
+# U04_Ex03_Face.py
 #
 # Author:
 # Course: Coding for OOP
@@ -53,11 +53,11 @@ def main():
     shape.setOutline("black")
     shape.setFill("yellow")
     shape.draw(win)
-    eye1 = Circle(Point(80, 80), 15)
+    eye1 = Circle(Point(80, 80), 10)
     eye1.setOutline("yellow")
     eye1.setFill("black")
     eye1.draw(win)
-    eye2 = Circle(Point(120, 80), 15)
+    eye2 = Circle(Point(120, 80), 10)
     eye2.setOutline("yellow")
     eye2.setFill("black")
     eye2.draw(win)
@@ -65,6 +65,10 @@ def main():
     line.setOutline("black")
     line.setFill("black")
     line.draw(win)
+    nose = Polygon(Point(100, 105), Point(100, 95), Point(120, 105))
+    nose.setOutline("black")
+    nose.setFill("yellow")
+    nose.draw(win)
     input("press ENTER to close the window")
     win.close()
 
