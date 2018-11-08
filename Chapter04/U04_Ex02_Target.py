@@ -1,4 +1,4 @@
-# U04_Ex02_Target.py.py
+# U04_Ex02_Target.py
 #
 # Author:
 # Course: Coding for OOP
@@ -12,12 +12,13 @@
 #    Chapter: #04
 #
 # Program Description
-#   This program will print an archery target
-#
+#   This program will print an archery target that has a yellow center surrounded by a red ring, a blue ring,
+#   a black ring, and a white outer ring.
 #
 #
 # Algorithm (pseudocode)
 #   Introduce Program
+#   Import graphics
 #   Open Graphics Window
 #   Draw white circle
 #   Set to points 100, 100
