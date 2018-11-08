@@ -12,40 +12,36 @@
 #    Chapter: 03
 #
 # Program Description
-#   This program will perform a fibonacci equation with natural numbers
-#
-#
-#
+#   Introduce: This program will find the value of a user selected term in a regular fibonacci sequence
+#   Get input for which term to be found, make variable 'n'
+#   Make term1 and term2 equal to 1
+#   Make an if statement
+#       If n is >= 3
+#           Make a for loop in range(3, n+1)
+#           make variable named thisTerm
+#           make thisTerm equal to ter11 + term2
+#           make term1 equal to term2
+#           make term2 equal to thisTerm
+#       print thisTerm
+#       if else:
+#           print term1
 # Algorithm (pseudocode)
-#   Introduce program
-#   define start and y as 0
-#   Get input for start (will be used as starting number)
-#   Get input for rep (used for repetition)
-#   for amount in range(rep):
-#           This will be used for calculating the sequence and how it increases.
-#       start = start + y
-#       y = start - y
-#       print(start with description)
+#
 
 
 def main():
-    #   Introduce program
-    print("This program will calculate A Fibonacci Sequence with user generated starting points.  ")
-    #   define x and y as 0
-    start = 0
-    y = 0
-    #   Get input for x
-    start = eval(input("What is the starting point?   "))
-    #   Get input for rep
-    rep = eval(input("How many numbers are there in this sequence?   "))
-    #   for amount in range(rep):
-    for amount in range(rep):
-        #  x = x + y
-        start = start + y
-        #  y = x - y
-        y = start - y
-        #  print(x)
-        print("The sequence is", start,)
+    print("This program will find the value of a user selected term in a regular fibonacci sequence")
+    n = int(input("Which term would you like to display?   "))
+    term1 = 1
+    term2 = 1
+    if n >= 3:
+        for i in range(3, n+1):
+            thisTerm = term1 + term2
+            term1 = term2
+            term2 = thisTerm
+        print("The value is:", thisTerm)
+    else:
+        print("The value is:", term1)
 
 
 main()

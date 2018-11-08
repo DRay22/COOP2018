@@ -31,15 +31,13 @@ def main():
     print("This program will find the sum of cubed natural numbers")
     # Get repetition number, define as rep
     n = eval(input("How many numbers would you like to sum?  "))
-    # Define x as 0
-    x = 0
     # Define sumnat as 0
     sumnat = 0
     # For loop in range 1, n + 1
     for x in range(1, n + 1):
         # Equation for sumnat
-        sumnat = sumnat + x
+        sumnat = sumnat + x**3
         # Print sumnat
-    print("the sum of the natural numbers is", sumnat**3)
+    print("the sum of the natural numbers is", sumnat)
 
 main()
