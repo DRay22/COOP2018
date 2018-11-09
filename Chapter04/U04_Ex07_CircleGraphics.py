@@ -1,19 +1,19 @@
 # U04_Ex07_CircleGraphics.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 29 Oct 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Circle Graphics Ex07
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
-#
-#
+#   This program will make a circle with a user specified radius and find where it intersects with a line on the y
+#   intercept.
 #
 #
 # Algorithm (pseudocode)

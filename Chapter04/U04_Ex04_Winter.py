@@ -7,9 +7,9 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Winter Ex04
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
 #   This program will draw a winter scene

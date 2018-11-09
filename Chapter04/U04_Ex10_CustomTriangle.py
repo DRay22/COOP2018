@@ -1,15 +1,15 @@
 # U04_Ex10_CustomTriangle.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 01 Nov 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Custom Triangle Ex10
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
 #   This program will create a Triangle with mouse clicks on the graphics window

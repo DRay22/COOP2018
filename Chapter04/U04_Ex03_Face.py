@@ -1,15 +1,15 @@
 # U04_Ex03_Face.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 22 Oct 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Face Ex03
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
 #   This program will draw a face

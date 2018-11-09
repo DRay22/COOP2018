@@ -1,6 +1,6 @@
 # U04_Ex02_Target.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 22  2018

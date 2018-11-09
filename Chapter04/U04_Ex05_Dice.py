@@ -1,15 +1,15 @@
 # U04_Ex05_Dice.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 24 Oct 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Dice Ex05
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
 #   This program will display six sides of dice

@@ -1,18 +1,18 @@
 # U04_Ex11_FiveClickHouse.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 01 Nov 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Five Click House Ex11
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
-#
+# This program will make a house using five user submitted clicks
 #
 #
 #

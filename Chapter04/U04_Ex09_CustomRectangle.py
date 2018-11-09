@@ -1,18 +1,18 @@
 # U04_Ex09_CustomRectangle.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 29 Oct 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Custom Rectangle Ex09
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
-#
+#   This program will draw a rectangle based off of user mouse input and display the area and perimeter of it
 #
 #
 #

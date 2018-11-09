@@ -1,18 +1,18 @@
 # U04_Ex06_FutValGraph.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 29 Oct 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: FutValGraph Ex06
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #04
 #
 # Program Description
-#
+#   This program will make a graph of a future investment
 #
 #
 #
