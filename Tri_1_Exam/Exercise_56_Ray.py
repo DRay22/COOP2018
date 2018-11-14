@@ -1,9 +1,20 @@
-# Exercise 56
-# Trimester 1 Exam
-# Donovan Ray
+# Exercise_56_Ray.py.py
+#
+# Author: Donovan Ray
+# Course: Coding for OOP
+# Section: A2
+#     Date: 14 Nov 2018
+#      IDE: PyCharm
+#
+# Assignment Info
+#   Trimester 1 Exam
+#
+# Program Description
+#   This program will take user specified lengths of a triangle, and check to see if it will make a triangle
 #
 #
-#   Algorithm:
+#
+# Algorithm (pseudocode)
 #       is_triangle:
 #           use three checking equations:
 #               check1 = a + b < c
@@ -32,10 +43,6 @@
 #               print "The sides would make a triangle"
 #           if tri returns True:
 #               print "The sides would not make a triangle"
-#
-#
-# if __name__ == '__main__':
-#   main()
 
 
 def is_triangle(a, b, c):
@@ -70,3 +77,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
