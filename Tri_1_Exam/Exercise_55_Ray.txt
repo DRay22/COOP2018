@@ -1,0 +1,37 @@
+Algorithm:
+
+check_fermat:
+    Formula:
+        chk = (a**n) + (b**n) = (c**n)
+        (Values are given by users in the main function)
+    if chk is false:
+        print "Holy smokes, Fermat was wrong!"
+    if chk is true:
+        print "No, that doesn't work..."
+
+main:
+    Introduce program:
+        print "This program will test Fermat's Last Theorem with user specified numbers"
+    Get values of a, b, c, and n
+        get input for a, with prompt "What is the first number?    "
+        get input for b, with prompt "What is the second number?    "
+        get input for c, with prompt "What is the third number?    "
+        get input for n, with prompt "What is the value of the exponent? (Press Q to quit)   "
+    if n is greater than 2:
+        Run check_fermat with values of a, b, c, and n
+        if chk returns false:
+            print "Holy smokes, Fermat was wrong!"
+        if chk returns true:
+            print "No, that doesn't work..."
+        while chk is true:
+            run main until false or given command to quit the while loop
+    if n is not greater than or equal to 2:
+        run main again and print "the exponent must be greater than 2"
+    if n is equal to 2:
+        run check_fermat with values of a, b, c, and n
+        if chk returns false:
+            print "Holy smokes, Fermat was wrong!"
+        if chk returns true:
+            print "No, that doesn't work..."
+        while chk is true:
+            run main until false or given command to quit the while loop
