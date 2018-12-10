@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Acronym Exercise 4
 #     Source: Python Programming
 #    Chapter: #05
 #
@@ -35,7 +35,7 @@ def main():
     for word in list:
         acronym += word[0]
     acronymFin = acronym.upper()
-    print("The acronym is", acronymFin)
+    print("Your acronym is", acronymFin)
 
 
 main()
