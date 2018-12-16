@@ -1,6 +1,6 @@
 # U05_Ex12_Futval.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 06 Dec 2018
@@ -12,7 +12,7 @@
 #    Chapter: #05
 #
 # Program Description
-#
+#   This program will calculate the future value of an investment
 #
 #
 #
