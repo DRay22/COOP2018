@@ -24,7 +24,7 @@
 #   make loop for word in list
 #       acronym += word[0]
 #   acronymFin equal to acronym.upper()
-#   print output
+#   print output with formatting
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
     for word in list:
         acronym += word[0]
     acronymFin = acronym.upper()
-    print("Your acronym is", acronymFin)
+    print("Your acronym is {0}".format(acronymFin))
 
 
 main()
