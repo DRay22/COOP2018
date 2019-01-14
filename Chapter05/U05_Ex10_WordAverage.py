@@ -64,7 +64,7 @@ def main():
     for word in phrSplit:
         wordCount = wordCount + 1
     print("There are {0} words in the phrase".format(wordCount))
-    print("The average word length is {0}".format(Avg / wordCount))
+    print("The average word length is {0} letters".format(Avg / wordCount))
 
 
 main()
