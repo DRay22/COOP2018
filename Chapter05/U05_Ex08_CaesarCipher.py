@@ -80,14 +80,14 @@ def main(cipherFin):
                          + (Wordlensel.count('y') * 24)
                          + (Wordlensel.count('x') * 25) + (Wordlensel.count('z') * 26) + (Wordlensel.count(" ") * 0)]
             cipherselFin = ciphersel[0]
-            cipherselFinKey = cipherselFin + key
+            cipherselFinKey = cipherselFin + key - 1
 
             # 'If' statement to make cipher circular
-            if cipherselFin >= 26 - key:
-                cipherselFinKey = (cipherselFin - 26) + key
+            if cipherselFinKey >= 26 - key:
+                cipherselFinKey = (cipherselFin - 26) + key - 1
 
             # Cipher finding letter using number assigned with key
-            cipherlist = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+            cipherlist = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
                           's', 't', 'u', 'v', 'w', 'y', 'x', 'z']
 
             # Add all letters together
@@ -105,7 +105,7 @@ def print1():
     printFin = main(cipherFin)
 
     # Print Output
-    print(printFin)
+    print("Your ciphered statement is: {0}".format(printFin))
 
 
 print1()
