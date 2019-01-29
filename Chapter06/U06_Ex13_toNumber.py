@@ -43,37 +43,40 @@ def Input():
 def Convert():
     string = Input()
     rep = string.count(',') + 1
-    string = string.split(',')
-    sel = -1
+    string = string.split(', ')
+    sel = 0
     Bstring = 'The list is: '
     for i in range(rep):
-        sel = sel + 1
-        print(sel)
-        print(string[sel])
-        if string[sel] == 'one' or 'One':
-            string = '1'
-        if string[sel] == 'two' or 'Two':
-            string = '2'
-        if string[sel] == 'three' or 'Three':
-            string = '3'
-        if string[sel] == 'four' or 'Four':
-            string = '4'
-        if string[sel] == 'five' or 'Five':
-            string = '5'
-        if string[sel] == 'six' or 'Six':
-            string = '6'
-        if string[sel] == 'seven' or 'Seven':
-            string = '7'
-        if string[sel] == 'eight' or 'Eight':
-            string = '8'
-        if string[sel] == 'nine' or 'Nine':
-            string = '9'
-        if string[sel] == 'ten' or 'Ten':
-            string = '10'
+        string = string[sel]
+        if string == 'ten':
+            stringfin = '10'
+        if string == 'nine':
+            stringfin = '9'
+        if string == 'eight':
+            stringfin = '8'
+        if string == 'seven':
+            stringfin = '7'
+        if string == 'six':
+            stringfin = '6'
+        if string == 'five':
+            stringfin = '5'
+        if string == 'four':
+            stringfin = '4'
+        if string == 'three':
+            stringfin = '3'
+        if string == 'two':
+            stringfin = '2'
+        if string == 'one':
+            stringfin = '1'
         else:
-            print("Number out of range or used with incorrect syntax")
-        Bstring = Bstring + str(string) + ','
-        print(Bstring)
+            string = 'ERROR'
+        Bstring = Bstring + (stringfin + ',')
+        if sel < rep:
+            sel = sel + 1
+        if sel == rep:
+            sel = sel + 0
+        if sel > rep:
+            break
     return Bstring
 
 
