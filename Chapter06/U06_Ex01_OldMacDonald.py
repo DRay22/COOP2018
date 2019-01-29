@@ -1,15 +1,15 @@
 # U06_Ex01_OldMacDonald.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 12 Jan 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: OldMacDonald 01
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #06
 #
 # Program Description
 #   This program will print out the lyrics to Old MacDonald
