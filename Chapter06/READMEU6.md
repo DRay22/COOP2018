@@ -9,6 +9,6 @@
 * Ex09
 * Ex11
 * Ex12
+* Ex13
 * Ex14
 ## In Progress
-* Ex13

@@ -37,6 +37,8 @@
 
 
 def Input():
+    print("This program will convert a list of strings to a list of ints.")
+    print("Please do not use capital letters, the list goes from 1 to 10.")
     Astring = str(input("What is the list of numbers that you would like to convert?  (Please seperate by commas)   "))
     return Astring
 
