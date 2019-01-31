@@ -45,11 +45,13 @@ def Input():
 def Convert():
     string = Input()
     rep = string.count(',') + 1
-    string = string.split(', ')
+    stringspl = string.split(', ')
+    # print("\nDebugging: \n \nstring split", string)
     sel = 0
     Bstring = 'The list is: '
     for i in range(rep):
-        string = string[sel]
+        string = stringspl[sel]
+        # print("string selected:", string)
         if string == 'ten':
             stringfin = '10'
         if string == 'nine':
@@ -72,9 +74,12 @@ def Convert():
             stringfin = '1'
         else:
             string = 'ERROR'
-        Bstring = Bstring + (stringfin + ',')
         if sel < rep:
             sel = sel + 1
+            # print('selector', sel)
+            # print('string final', stringfin)
+            Bstring = Bstring + (' ' + stringfin)
+            Bstring = Bstring + (",")
         if sel == rep:
             sel = sel + 0
         if sel > rep:
@@ -84,7 +89,7 @@ def Convert():
 
 def Print():
     string = Convert()
-    print(string)
+    print('\n', string)
 
 
 Print()
