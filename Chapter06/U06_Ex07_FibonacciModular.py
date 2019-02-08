@@ -17,26 +17,27 @@
 #
 #
 # Algorithm (pseudocode)
+#   Func Input():
+#       get input for term
+#       return term
 #
+#   Func Fibonacci
+#       call Input
+#       initialize term1 and term2 as 1
+#       if Input >= 3:
+#           loop for 3, term+1
+#               thisTerm = term1 + term2
+#               term1 = term2
+#               term2 = thisTerm
+#           return value
+#       else:
+#           return term1
 #
-#
-#
+#   Func Print():
+#       call fibonacci
+#       print output
 #
 
-
-# Notes from previous code:
-#    print("This program will find the value of a user selected term in a regular fibonacci sequence")
-#    n = int(input("Which term would you like to display?   "))
-#    term1 = 1
-#    term2 = 1
-#   if n >= 3:
-#        for i in range(3, n+1):
-#            thisTerm = term1 + term2
-#            term1 = term2
-#            term2 = thisTerm
-#        print("The value is:", thisTerm)
-#    else:
-#        print("The value is:", term1)
 
 def Input():
     term = int(input('What term would you like to select?  '))
