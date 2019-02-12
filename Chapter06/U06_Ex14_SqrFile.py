@@ -1,18 +1,18 @@
 # U06_Ex14_SqrFile.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 18 Jan 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Square File 14
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #06
 #
 # Program Description
-#
+#   This program will get a file from the user and square the contents
 #
 #
 #
