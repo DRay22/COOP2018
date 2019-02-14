@@ -1,15 +1,15 @@
 # U07_Ex03_CSGrading.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 04 Feb 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: CS Grading 3
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #07
 #
 # Program Description
 #   This program will convert a number grade to a letter grade

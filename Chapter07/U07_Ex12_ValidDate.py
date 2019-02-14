@@ -1,15 +1,15 @@
 # U07_Ex12_ValidDate.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 08 Feb 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Valid Date 12
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #07
 #
 # Program Description
 #   this program will check a date and see if it is valid
