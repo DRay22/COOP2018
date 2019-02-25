@@ -38,6 +38,6 @@ def SumNatural():
     sumnat = 0
     for i in range(1, n + 1):
         sumnat = sumnat + i**3
-    print("The sum of the natural numbers is {0}".format(sumnat))
+    print("The sum of the natural numbers is {0}".format(sumnat + n))
 
 SumNatural()
