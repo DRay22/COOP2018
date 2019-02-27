@@ -54,14 +54,20 @@
 #       call check(date1, date2, date3)
 #       print output
 
+from Chapter07.U07_Ex11_LeapYear import LeapTest
+
 
 def Input():
-    Dateinit = str(input("What is the date that you would like to check?   (please separate by backwards slashes)   "))
+    Dateinit = str(input("What is the date that you would like to check?   (please separate by slashes)   "))
     return Dateinit
 
-def dateCheck(date1, date2):
+def dateCheck(date1, date2, date3):
     date2 = int(date2)
     date1 = int(date1)
+    date3 = int(date3)
+    YearLeapTest = LeapTest(date3)
+
+
     if date1 == 1:
         if date2 > 31:
             return 'false'
@@ -69,10 +75,18 @@ def dateCheck(date1, date2):
             return 'valid'
 
     if date1 == 2:
-        if date2 > 28:
+        if YearLeapTest == "The year {0}, is a leap year".format(date3):
+            if date2 > 29:
+                return 'false'
+            elif date2 <= 29:
+                return 'valid'
+        elif date2 > 28:
             return 'false'
         else:
             return 'valid'
+        LeapTest(date3)
+
+
 
     if date1 == 3:
         if date2 > 31:
@@ -131,7 +145,7 @@ def dateCheck(date1, date2):
     if date1 == 12:
         if date2 > 31:
             return 'false'
-        else:
+        elif date2 < 31:
             return 'valid'
     if date1 > 12:
         return 'false'
@@ -142,7 +156,8 @@ def Output():
     dateSpl = date.split("/")
     date1 = dateSpl[0]
     date2 = dateSpl[1]
-    DateCheck = dateCheck(date1, date2)
+    date3 = dateSpl[2]
+    DateCheck = dateCheck(date1, date2, date3)
     print("\nThe date, {0}, is a {1} date".format(date, DateCheck))
 
 
