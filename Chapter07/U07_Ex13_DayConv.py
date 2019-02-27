@@ -1,15 +1,15 @@
 # U07_Ex13_DayConv.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 14 Feb 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Day Conversion 13
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #07
 #
 # Program Description
 #   This program will convert a date to a number of days in a year.
