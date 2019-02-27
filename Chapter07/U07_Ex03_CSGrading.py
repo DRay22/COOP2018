@@ -54,13 +54,13 @@ def Input():
 def Conv(grade):
     if grade >= 90:
         return 4
-    if grade >= 80:
+    elif grade >= 80:
         return 3
-    if grade >= 70:
+    elif grade >= 70:
         return 2
-    if grade >= 60:
+    elif grade >= 60:
         return 1
-    if grade < 60:
+    elif grade < 60:
         return 0
     else:
         return "ERROR, Grade is out of range"
