@@ -78,13 +78,13 @@ def BMIConv():
 
     # If statements for healthy range
     if bmi < 19.0:
-        return ("{0}, Below Healthy Range".format(int(bmi)))
+        return int(bmi), "Below Healthy Range"
     if bmi >= 19.0:
         if bmi <= 25.0:
-            return ("{0}, In Healthy Range".format(int(bmi)))
+            return int(bmi), "In Healthy Range"
     else:
         if bmi > 25.0:
-            return ("{0}, Above Healthy Range".format(int(bmi)))
+            return int(bmi), "Above Healthy Range"
 
 
 def Output():
@@ -95,13 +95,14 @@ def Output():
 
     # Call/convert values to float
     BMIFin = BMIConv()
-    BMIFin = BMIFin.split(",")
-    BMINum = BMIFin[0]
-    BMINum = float(BMINum)
-    BMIStat = BMIFin[1]
+    if BMIFin == None:
+        print("Input Error, please enter a valid weight and height")
+    else:
+        BMINum = BMIFin[0]
+        BMINum = float(BMINum)
+        BMIStat = BMIFin[1]
+        print("BMI Number: {0:0.2f} | BMI Status:{1}".format(BMINum, BMIStat))
 
-    # Print output using string formatting
-    print("BMI Number: {0:0.2f} | BMI Status:{1}".format(BMINum, BMIStat))
 
 
 if __name__ == '__main__':
