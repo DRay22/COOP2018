@@ -1,18 +1,18 @@
 # U07_Ex17_Bounce.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 21 Feb 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Bouncing 17
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #07
 #
 # Program Description
-#
+#   This program will make a ball that bounces around the graphics window
 #
 #
 #
@@ -25,8 +25,8 @@
 #       make graphics window
 #       for i in range(10000)
 #           update(30) (to slow it down)
+#           randomize dx and dy in range 50, 200
 #           draw circle using points dx, dy
-#           add to dx and dy.
 #           if statements for borders of window(200, 200)
 #               too high:
 #                   dx = -1
