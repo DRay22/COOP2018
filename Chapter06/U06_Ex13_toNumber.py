@@ -40,56 +40,26 @@ def Input():
     print("This program will convert a list of strings to a list of ints.")
     print("Please do not use capital letters, the list goes from 1 to 10.")
     Astring = str(input("What is the list of numbers that you would like to convert?  (Please seperate by commas)   "))
-    return Astring
+    return Astring.split(",")
 
-def Convert():
-    string = Input()
-    rep = string.count(',') + 1
-    stringspl = string.split(', ')
+def Convert(Astring):
+    rep = Astring.count(',') + 1
+    stringspl = Astring
+    print(stringspl)
     # print("\nDebugging: \n \nstring split", string)
     sel = 0
     Bstring = 'The list is: '
-    for i in range(rep):
-        string = stringspl[sel]
-        # print("string selected:", string)
-        if string == 'ten':
-            stringfin = '10'
-        if string == 'nine':
-            stringfin = '9'
-        if string == 'eight':
-            stringfin = '8'
-        if string == 'seven':
-            stringfin = '7'
-        if string == 'six':
-            stringfin = '6'
-        if string == 'five':
-            stringfin = '5'
-        if string == 'four':
-            stringfin = '4'
-        if string == 'three':
-            stringfin = '3'
-        if string == 'two':
-            stringfin = '2'
-        if string == 'one':
-            stringfin = '1'
-        else:
-            string = 'ERROR'
-        if sel < rep:
-            sel = sel + 1
-            # print('selector', sel)
-            # print('string final', stringfin)
-            Bstring = Bstring + (' ' + stringfin)
-            Bstring = Bstring + (",")
-        if sel == rep:
-            sel = sel + 0
-        if sel > rep:
-            break
-    return Bstring
+    sel = -1
+    print(stringspl)
+    for i in range(len(stringspl)):
+        stringspl[i] = eval(stringspl[i])
+    return stringspl
 
 
 def Print():
-    string = Convert()
-    print('\n', string)
+    Astring = Input()
+    string = Convert(Astring)
+    print('The new list is:', string)
 
 
 Print()
