@@ -55,7 +55,7 @@ def dateConv(dateMon, dateDay, dateYear):
     print("Day:", dateDay)
     print("Year:", dateYear)
 
-    ValidCheck = U07_Ex12_ValidDate.dateCheck(dateMon, dateDay)
+    ValidCheck = U07_Ex12_ValidDate.dateCheck(dateMon, dateDay, dateYear)
     LeapCheck = U07_Ex11_LeapYear.LeapTest(dateYear)
     if ValidCheck == 'valid':
         if LeapCheck == "The year {0}, is a leap year".format(year):
@@ -65,9 +65,9 @@ def dateConv(dateMon, dateDay, dateYear):
                 return date
             if dateMon >= 2:
                 date = 31 * (dateMon - 1) + dateDay
-                print("Date Final:", date)
+                # print("Date Final:", date)
                 date = date + 1
-                print("Date Final (With Feb Calc):", date)
+                # print("Date Final (With Feb Calc):", date)
                 return date
         else:
             if dateMon < 2:
