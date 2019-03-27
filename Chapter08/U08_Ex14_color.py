@@ -1,15 +1,15 @@
 # U08_Ex14_color.py
 #
-# Author:
+# Author: Donovan Ray
 # Course: Coding for OOP
 # Section: A2
 #     Date: 26 Mar 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: GreyScale 14
 #     Source: Python Programming
-#    Chapter: #
+#    Chapter: #08
 #
 # Program Description
 #   This program will change the color of an image to greyscale
