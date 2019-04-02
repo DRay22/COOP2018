@@ -221,7 +221,7 @@ def RandGraphic(win):
 def SwitchGraphic(win):
     # Button:
     # Points of Button: (450, 373) and (590, 400)
-    SwitchButton = Rectangle(Point(450, 363), Point(590, 390))
+    SwitchButton = Rectangle(Point(450, 360), Point(590, 390))
     SwitchButton.setFill("Light Grey")
     SwitchButton.setOutline("Black")
     SwitchButton.draw(win)
