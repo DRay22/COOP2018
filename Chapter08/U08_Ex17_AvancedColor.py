@@ -49,6 +49,10 @@ from graphics import *
 
 from random import *
 
+global darken
+
+global text2
+
 def GraphMain(fileN):
     filename = fileN
     win = GraphWin("Image Manipulation", 600, 600)
@@ -118,8 +122,11 @@ def GraphMain(fileN):
 
     SwitchButton = SwitchGraphic(win)
 
+    IDKButton = IDKGraphic(win)
+
     # Wait for button click:
-    Click = ClickTest(img, win, filename)
+    Click = ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGraphic, RandGraphic, SwitchGraphic,
+              IDKGraphic)
 
 
 # Button Graphics
@@ -140,6 +147,7 @@ def QuitGraphic(win):
     QuitText.setTextColor("Black")
     QuitText.setSize(14)
     QuitText.draw(win)
+    return QuitButton
 
 def SaveGraphic(win):
     # Button:
@@ -156,6 +164,7 @@ def SaveGraphic(win):
     SaveText.setTextColor("Black")
     SaveText.setSize(12)
     SaveText.draw(win)
+    return SaveButton
 
 def GreyGraphic(win):
     # Button:
@@ -172,6 +181,7 @@ def GreyGraphic(win):
     GreyText.setTextColor("Black")
     GreyText.setSize(12)
     GreyText.draw(win)
+    return GreyButton
 
 def NegGraphic(win):
 
@@ -189,6 +199,7 @@ def NegGraphic(win):
     NegText.setTextColor("Black")
     NegText.setSize(12)
     NegText.draw(win)
+    return NegButton
 
 def RandGraphic(win):
     # Button:
@@ -205,6 +216,7 @@ def RandGraphic(win):
     RandText.setTextColor("Black")
     RandText.setSize(12)
     RandText.draw(win)
+    return RandButton
 
 def SwitchGraphic(win):
     # Button:
@@ -221,37 +233,133 @@ def SwitchGraphic(win):
     SwitchText.setTextColor("Black")
     SwitchText.setSize(12)
     SwitchText.draw(win)
+    return SwitchButton
+
+def IDKGraphic(win):
+    # Button:
+    # Points of Button: (450, 373) and (590, 400)
+    IDKButton = Rectangle(Point(450, 320), Point(590, 350))
+    IDKButton.setFill("Light Grey")
+    IDKButton.setOutline("Black")
+    IDKButton.draw(win)
+
+    # Text:
+    # Points of Text: (490, 373) and (590, 385)
+    IDKText = Text(Point(495, 333), Point(580, 345))
+    IDKText.setText("Distort")
+    IDKText.setTextColor("Black")
+    IDKText.setSize(12)
+    IDKText.draw(win)
+    return IDKButton
+
 # Click Test
 
-def ClickTest(img, win, filename):
+def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGraphic, RandGraphic, SwitchGraphic,
+              IDKGraphic):
     while True:
         MouseCheck = win.checkMouse()
         if MouseCheck:
-            MouseClickY = MouseCheck.getY()
-            QuitParam = MouseClickY >= 560 and MouseClickY <= 590
-            # Quit
-            if MouseCheck and MouseClickY >= 560 and MouseClickY <= 590:
-                QuitProgram(win)
+            MouseClickX = MouseCheck.getX()
+            if MouseClickX >=450 and MouseClickX <= 590:
+                MouseClickY = MouseCheck.getY()
+                global darken
+                global text2
+                # Quit
+                if MouseCheck and MouseClickY >= 560 and MouseClickY <= 590:
+                    QuitProgram(win)
+                    darken = Rectangle(Point(450, 560), Point(590, 590))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 560), Point(590, 590))
+                    text2.setTextColor("Black")
+                    text2.setSize(14)
+                    text2.setText("Quit")
+                    text2.draw(win)
 
-            # Greyscale
-            if MouseCheck and MouseClickY >= 480 and MouseClickY <= 510:
-                Grey = GreyScale(img, win, filename)
+                # Greyscale
+                if MouseCheck and MouseClickY >= 480 and MouseClickY <= 510:
+                    Grey = GreyScale(img, win, filename)
+                    darken = Rectangle(Point(450, 480), Point(590, 510))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 493), Point(590, 510))
+                    text2.setTextColor("Black")
+                    text2.setSize(12)
+                    text2.setText("Greyscale")
+                    text2.draw(win)
 
-            # Negative
-            if MouseCheck and MouseClickY >= 440 and MouseClickY <= 470:
-                Neg = Negative(img, win, filename)
+                # Negative
+                if MouseCheck and MouseClickY >= 440 and MouseClickY <= 470:
+                    Neg = Negative(img, win, filename)
+                    darken = Rectangle(Point(450, 440), Point(590, 470))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 453), Point(590, 465))
+                    text2.setTextColor("Black")
+                    text2.setSize(12)
+                    text2.setText("Negative")
+                    text2.draw(win)
 
-            # Save
-            if MouseCheck and MouseClickY >= 520 and MouseClickY <= 550:
-                Save = SaveImage(img)
+                # Save
+                if MouseCheck and MouseClickY >= 520 and MouseClickY <= 550:
+                    Save = SaveImage(img)
+                    darken = Rectangle(Point(450, 520), Point(590, 550))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 535), Point(590, 545))
+                    text2.setTextColor("Black")
+                    text2.setSize(12)
+                    text2.setText("Save")
+                    text2.draw(win)
 
-            # Random
-            if MouseCheck and MouseClickY >= 400 and MouseClickY <= 430:
-                Rand = Random(img, win, filename)
+                # Random
+                if MouseCheck and MouseClickY >= 400 and MouseClickY <= 430:
+                    Rand = Random(img, win, filename)
+                    darken = Rectangle(Point(450, 400), Point(590, 430))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 413), Point(590, 425))
+                    text2.setTextColor("Black")
+                    text2.setSize(12)
+                    text2.setText("TV Static")
+                    text2.draw(win)
 
-            # Switch
-            if MouseCheck and MouseClickY >= 370 and MouseClickY <= 400:
-                switch = Switch(img, win, filename)
+                # Switch
+                if MouseCheck and MouseClickY >= 370 and MouseClickY <= 400:
+                    switch = Switch(img, win, filename)
+                    darken = Rectangle(Point(450, 360), Point(590, 390))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 373), Point(590, 385))
+                    text2.setTextColor("Black")
+                    text2.setSize(12)
+                    text2.setText("Switch")
+                    text2.draw(win)
+
+                # IDK
+                if MouseCheck and MouseClickY >= 320 and MouseClickY <= 350:
+                    idk = IDK(img, win, filename)
+                    darken = Rectangle(Point(450, 320), Point(590, 350))
+                    darken.setFill("Dark Grey")
+                    darken.setOutline("Black")
+                    darken.draw(win)
+                    text2 = Text(Point(493, 333), Point(590, 345))
+                    text2.setTextColor("Black")
+                    text2.setSize(12)
+                    text2.setText("Distort")
+                    text2.draw(win)
+                win.getMouse()
+                darken.undraw()
+                text2.undraw()
+
+
+
 
 
 
@@ -323,8 +431,25 @@ def Switch(img, win, filename):
     img.undraw()
     Simg.draw(win)
 
+def IDK(img, win, filename):
+    img = Image(Point(200, 300), filename)
+    img.undraw()
+    img.draw(win)
+    Iimg = img
+    IimgWide = img.getWidth()
+    IimgHigh = img.getHeight()
+    for w in range(IimgWide):
+        for h in range(IimgHigh):
+            colorSel = Iimg.getPixel(w, h)
+            colorSel0 = colorSel[0]
+            colorSel1 = colorSel[1]
+            colorSel2 = colorSel[2]
+            Iimg.setPixel(w, h, color_rgb(colorSel[(randrange(1,3))], colorSel[(randrange(1,3))], colorSel[(randrange(1,3))]))
+    img.undraw()
+    Iimg.draw(win)
+
 def SaveImage(img):
-    NewFileName = str(input("What would you like the file to be called?   "))
+    NewFileName = str(input("What would you like the file to be called?  (Automatically appends .ppm to any file)    "))
     img.save(NewFileName + '.ppm')
 
 
