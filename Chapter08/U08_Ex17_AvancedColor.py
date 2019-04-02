@@ -256,17 +256,24 @@ def IDKGraphic(win):
 
 def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGraphic, RandGraphic, SwitchGraphic,
               IDKGraphic):
+    global darken
+    global text2
+    darken = Rectangle(Point(0, 0), Point(10, 10))
+    darken.setFill("White")
+    darken.draw(win)
+    text2 = Rectangle(Point(0, 0), Point(10, 10))
+    text2.setFill("White")
+    text2.draw(win)
     while True:
         MouseCheck = win.checkMouse()
         if MouseCheck:
             MouseClickX = MouseCheck.getX()
             if MouseClickX >=450 and MouseClickX <= 590:
                 MouseClickY = MouseCheck.getY()
-                global darken
-                global text2
+                darken.undraw()
+                text2.undraw()
                 # Quit
                 if MouseCheck and MouseClickY >= 560 and MouseClickY <= 590:
-                    QuitProgram(win)
                     darken = Rectangle(Point(450, 560), Point(590, 590))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -276,10 +283,11 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(14)
                     text2.setText("Quit")
                     text2.draw(win)
+                    QuitProgram(win)
+
 
                 # Greyscale
                 if MouseCheck and MouseClickY >= 480 and MouseClickY <= 510:
-                    Grey = GreyScale(img, win, filename)
                     darken = Rectangle(Point(450, 480), Point(590, 510))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -289,10 +297,11 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(12)
                     text2.setText("Greyscale")
                     text2.draw(win)
+                    Grey = GreyScale(img, win, filename)
+
 
                 # Negative
                 if MouseCheck and MouseClickY >= 440 and MouseClickY <= 470:
-                    Neg = Negative(img, win, filename)
                     darken = Rectangle(Point(450, 440), Point(590, 470))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -302,10 +311,11 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(12)
                     text2.setText("Negative")
                     text2.draw(win)
+                    Neg = Negative(img, win, filename)
+
 
                 # Save
                 if MouseCheck and MouseClickY >= 520 and MouseClickY <= 550:
-                    Save = SaveImage(img)
                     darken = Rectangle(Point(450, 520), Point(590, 550))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -315,10 +325,10 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(12)
                     text2.setText("Save")
                     text2.draw(win)
+                    Save = SaveImage(img)
 
                 # Random
                 if MouseCheck and MouseClickY >= 400 and MouseClickY <= 430:
-                    Rand = Random(img, win, filename)
                     darken = Rectangle(Point(450, 400), Point(590, 430))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -328,10 +338,11 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(12)
                     text2.setText("TV Static")
                     text2.draw(win)
+                    Rand = Random(img, win, filename)
+
 
                 # Switch
-                if MouseCheck and MouseClickY >= 370 and MouseClickY <= 400:
-                    switch = Switch(img, win, filename)
+                if MouseCheck and MouseClickY >= 360 and MouseClickY <= 390:
                     darken = Rectangle(Point(450, 360), Point(590, 390))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -341,10 +352,10 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(12)
                     text2.setText("Switch")
                     text2.draw(win)
+                    switch = Switch(img, win, filename)
 
                 # IDK
                 if MouseCheck and MouseClickY >= 320 and MouseClickY <= 350:
-                    idk = IDK(img, win, filename)
                     darken = Rectangle(Point(450, 320), Point(590, 350))
                     darken.setFill("Dark Grey")
                     darken.setOutline("Black")
@@ -354,9 +365,7 @@ def ClickTest(img, win, filename, QuitGraphic, SaveGraphic, GreyGraphic, NegGrap
                     text2.setSize(12)
                     text2.setText("Distort")
                     text2.draw(win)
-                win.getMouse()
-                darken.undraw()
-                text2.undraw()
+                    idk = IDK(img, win, filename)
 
 
 
@@ -444,7 +453,7 @@ def IDK(img, win, filename):
             colorSel0 = colorSel[0]
             colorSel1 = colorSel[1]
             colorSel2 = colorSel[2]
-            Iimg.setPixel(w, h, color_rgb(colorSel[(randrange(1,3))], colorSel[(randrange(1,3))], colorSel[(randrange(1,3))]))
+            Iimg.setPixel(w, h, color_rgb(colorSel[(randrange(0,2))], colorSel[(randrange(0,2))], colorSel[(randrange(0,2))]))
     img.undraw()
     Iimg.draw(win)
 
