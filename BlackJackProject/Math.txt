@@ -1,0 +1,38 @@
+from BlackJackProject import *
+
+from graphics import *
+
+class math:
+
+    def __init__:
+        """
+        SUBSTITUTE CARDVALUE1 WITH WHATEVER THE ACE IS
+
+        Win2.5() refers to the player winning 2.5x the amount he put in.
+        """
+        if PlayerValue == 21:
+            Win2.5()
+        elif PlayerValue > 21 & CardValue1 = True:
+            CardValue1 - 10
+        elif PlayerValue > 21:
+            Lose()
+        else:
+            winCheck()
+
+
+    def winCheck(self,DealerValue,PlayerValue):
+        """
+        Compare DealerValue to PlayerValue with an if else statement
+        Returns which is higher
+        Return Win money/Lose money (2x)
+        """
+        if PlayerValue > DealerValue:
+            return True
+        else:
+            return False
+
+    def DealerHit(self,DealerValue):
+        if DealerValue > 16:
+            return False
+        else:
+            return True
