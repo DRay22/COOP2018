@@ -85,8 +85,7 @@ class BlackJackMath:
         elif self.PlayerValue > 21:
             return False
         if self.PlayerValue == self.DealerValue:
-            bet = bet * 1
-            return int(bet)
+            return True
         else:
             if self.PlayerValue > self.DealerValue:
                 if self.PlayerValue <= 21 or self.DealerValue > 21:

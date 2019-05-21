@@ -201,6 +201,10 @@ def makeButtons(win):
     LoseText = MakeText(win, Point(2.5, 1), Point(4.75, 4), 14, "Black", "You Lost...")
     LoseText.Deactivate()
 
+    # Split
+    SplitText = MakeText(win, Point(2.5, 1), Point(4.75, 4), 14, "Black", "Split Pot")
+    SplitText.Deactivate()
+
 
     makeCards(win)
 
@@ -272,7 +276,12 @@ def makeButtons(win):
                 HitCover.draw(win)
                 makeCards(win)
                 HitCheck = False
-            if MoneyAMTT == 0:
+            if Win == True:
+                SplitText.Activate(win)
+                MoneyAMTT = betAMT + NewAMT
+                MoneyAMT.UpdateText("$" + str(MoneyAMTT))
+                BMoneyAMT.UpdateText("$0")
+            if MoneyAMTT <= 0:
                 EndGameText = MakeText(win, Point(2.5, 1.2), Point(4.75, 4.2), 14, "Black", "You are out of money")
                 EndGameText.Activate(win)
                 win.getMouse()
