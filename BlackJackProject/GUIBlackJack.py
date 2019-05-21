@@ -1,19 +1,19 @@
 # GUIBlackJack.py
 #
-# Author:
+# Author: Donovan Ray, Matthew Wiggans, Micheal Hu
 # Course: Coding for OOP
 # Section: A2
 #     Date: 07 May 2019
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: Name and Number
+#   Exercise: Black Jack Project
 #     Source: Python Programming
-#    Chapter: #FINAL
+#    Chapter: # Final Exam
 #
 # Program Description
 #
-#   This program will create a GUI for the BlackJack Project
+#   This program will create a GUI and a main function for the BlackJack Project
 #
 #
 # Algorithm (pseudocode)
@@ -27,7 +27,7 @@
 #       create Dialogue box
 #       create PlayerCard area
 #       create DealerCard area
-#       create money area
+#       create money area(s)
 #       create Interaction box
 
 #
@@ -37,20 +37,48 @@
 #       update Dialogue box appropriately
 #       update cards appropriately
 #       find clicks/ check if buttons are clicked and do according actions
-#       check to see who won using the MathFunction, and then display appropriate message and add winning to total
+#       make money dialogue (user's total amount)
+#       make bet money diag (how much the user has bet)
+#       make BUT DO NOT ACTIVATE win and lose text
+#       get click from user and check to see if it hit any buttons
+#       if it hits the Hit Button:
+#           give user another card
+#           display hit message
+#           change player card 3 value from 0 to appropriate value
+#           make HitCheck true
+#       Bet Button:
+#           display bet message
+#           bring up interface for the user to select how much they want to bet
+#           Get new money amount (subtract bet from total)
+#           Update money amounts
+#       Stay Button:
+#           bring up stay message
+#           (end hand by checking who won)
+#           display appropriate message (win/lose) and add winning (if win) to total
+#           cover card 3 with green rectangle
+#           get new hand from makeCards function
 
 #   def makeCards():
+#       global all vars from this function
 #       make 5 cards using the card function
 
 #   def hitFunction():
 #       Activate the 5th card in the deck and change hit status to True
+
+#   def BettingGUI():
+#       save previous money amount
+#       make rectangle for back of the interface
+#       make message asking user how much they would like to bet
+#       make entry object for user to input how much they would like to bet
+#       make two buttons bet and cancel (to confirm or cancel bet)
+#       close BettingGUI after buttons are clicked
 
 
 from graphics import *
 from Chapter10.button import *
 from BlackJackProject.TextCreator import *
 from BlackJackProject.TestCardCreate import *
-from BlackJackProject.ValueIDEA import *
+from BlackJackProject.BlackJackCARDFUNC import *
 from BlackJackProject.BlackJackMath import *
 
 

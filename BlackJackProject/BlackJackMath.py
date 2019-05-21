@@ -17,9 +17,23 @@
 #
 #
 # Algorithm (pseudocode)
+#   def __init__:
+#       check if the player has hit using HitCheck (Boolean)
+#       get player value and dealer value by adding appropriate cards
+#       Check if player has an ace (use card values)
 #
-#
-#
+#   def winCheck:
+#       Check for player ace
+#       check to see if the player's value is exactly 21
+#           if true, return bet * 2.5
+#       check if player value is over 21 BUT they have an ace
+#           if true, subtract 10 from their value (changing the ace value from 11 to 1)
+#       If player value is over 21, and they do not have an ace:
+#           return False
+#       if player value and dealer value are equal
+#           return ber (split pot)
+#       if player value is greater than dealer value and under 22:
+#           return bet * 2
 #
 #
 
